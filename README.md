@@ -1,9 +1,14 @@
-# api documentation for  [postcss-import (v9.1.0)](https://github.com/postcss/postcss-import#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-postcss-import.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-postcss-import) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-postcss-import.svg)](https://travis-ci.org/npmdoc/node-npmdoc-postcss-import)
+# npmdoc-postcss-import
+
+#### basic api documentation for  [postcss-import (v9.1.0)](https://github.com/postcss/postcss-import#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-postcss-import.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-postcss-import) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-postcss-import.svg)](https://travis-ci.org/npmdoc/node-npmdoc-postcss-import)
+
 #### PostCSS plugin to import CSS files
 
-[![NPM](https://nodei.co/npm/postcss-import.png?downloads=true)](https://www.npmjs.com/package/postcss-import)
+[![NPM](https://nodei.co/npm/postcss-import.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/postcss-import)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-postcss-import/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-postcss-import_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-postcss-import/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-postcss-import/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-postcss-import/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-postcss-import/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-postcss-import/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-postcss-import/build/screenCapture.npmPackageListing.svg)
 
@@ -72,21 +77,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "moox",
-            "email": "m@moox.io"
+            "name": "moox"
         },
         {
-            "name": "ryanzim",
-            "email": "opensrc@ryanzim.com"
+            "name": "ryanzim"
         },
         {
-            "name": "trysound",
-            "email": "trysound@yandex.ru"
+            "name": "trysound"
         }
     ],
     "name": "postcss-import",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/postcss/postcss-import.git"
@@ -97,47 +98,9 @@
         "release": "npmpub",
         "test": "ava"
     },
-    "version": "9.1.0"
+    "version": "9.1.0",
+    "bin": {}
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module postcss-import](#apidoc.module.postcss-import)
-1.  [function <span class="apidocSignatureSpan">postcss-import.</span>process (root, opts)](#apidoc.element.postcss-import.process)
-
-
-
-# <a name="apidoc.module.postcss-import"></a>[module postcss-import](#apidoc.module.postcss-import)
-
-#### <a name="apidoc.element.postcss-import.process"></a>[function <span class="apidocSignatureSpan">postcss-import.</span>process (root, opts)](#apidoc.element.postcss-import.process)
-- description and source-code
-```javascript
-process = function (root, opts) {
-  return postcss([creator(opts)]).process(root, opts);
-}
-```
-- example usage
-```shell
-...
-
-// css to be processed
-var css = fs.readFileSync("css/input.css", "utf8")
-
-// process css
-postcss()
-  .use(atImport())
-  .process(css, {
-// 'from' option is required so relative import can work from input dirname
-from: "css/input.css"
-  })
-  .then(function (result) {
-var output = result.css
-
-console.log(output)
-...
 ```
 
 
