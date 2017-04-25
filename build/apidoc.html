@@ -63,8 +63,48 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-import.postcss-import">
+            function <span class="apidocSignatureSpan"></span>postcss-import
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-import.index">
+            function <span class="apidocSignatureSpan">postcss-import.</span>index
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.postcss-import.process">
             function <span class="apidocSignatureSpan">postcss-import.</span>process
+            <span class="apidocSignatureSpan">(root, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.postcss-import.index">module postcss-import.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-import.index.index">
+            function <span class="apidocSignatureSpan">postcss-import.</span>index
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.postcss-import.index.process">
+            function <span class="apidocSignatureSpan">postcss-import.index.</span>process
             <span class="apidocSignatureSpan">(root, opts)</span>
             </a>
 
@@ -79,8 +119,98 @@
 
 
     <h2>
+        <a href="#apidoc.element.postcss-import.postcss-import" id="apidoc.element.postcss-import.postcss-import">
+        function <span class="apidocSignatureSpan"></span>postcss-import
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-import.index" id="apidoc.element.postcss-import.index">
+        function <span class="apidocSignatureSpan">postcss-import.</span>index
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.postcss-import.process" id="apidoc.element.postcss-import.process">
         function <span class="apidocSignatureSpan">postcss-import.</span>process
+        <span class="apidocSignatureSpan">(root, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (root, opts) {
+  return postcss([creator(opts)]).process(root, opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// css to be processed
+var css = fs.readFileSync(&#x22;css/input.css&#x22;, &#x22;utf8&#x22;)
+
+// process css
+postcss()
+  .use(atImport())
+  .<span class="apidocCodeKeywordSpan">process</span>(css, {
+// `from` option is required so relative import can work from input dirname
+from: &#x22;css/input.css&#x22;
+  })
+  .then(function (result) {
+var output = result.css
+
+console.log(output)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.postcss-import.index" id="apidoc.module.postcss-import.index">module postcss-import.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-import.index.index" id="apidoc.element.postcss-import.index.index">
+        function <span class="apidocSignatureSpan">postcss-import.</span>index
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function creator() {
+  var transformer = initializer.apply(undefined, arguments);
+  transformer.postcssPlugin = name;
+  transformer.postcssVersion = new _processor2.default().version;
+  return transformer;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.postcss-import.index.process" id="apidoc.element.postcss-import.index.process">
+        function <span class="apidocSignatureSpan">postcss-import.index.</span>process
         <span class="apidocSignatureSpan">(root, opts)</span>
         </a>
     </h2>
